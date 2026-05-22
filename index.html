@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zijun Pang (Karina) - Personal Homepage</title>
     <style>
-        /* Minimalist academic style with soft elegant tones */
+        /* 完美保留你喜欢的极简粉紫调与左字右图排版 */
         :root {
             --primary-color: #6c5ce7;
             --accent-color: #ff78ca;
@@ -23,19 +23,19 @@
         }
 
         .container {
-            max-width: 750px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
-        /* Original Left-Right Header Layout */
+        /* 核心：左边文字简介、右边圆形头像的横向排版 */
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             border-bottom: 1px solid #e1e4e8;
-            padding-bottom: 35px;
-            margin-bottom: 35px;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         .profile-text {
@@ -44,7 +44,7 @@
         }
 
         .profile-text h1 {
-            margin: 0 0 8px 0;
+            margin: 0 0 10px 0;
             font-size: 2.2rem;
             color: #1e1e24;
         }
@@ -52,103 +52,78 @@
         .profile-text .subtitle {
             font-size: 1.1rem;
             color: #636e72;
-            margin-bottom: 8px;
-            font-weight: 500;
+            margin-bottom: 15px;
         }
 
-        .profile-text .details {
-            font-size: 0.95rem;
-            color: #b2bec3;
+        .profile-text .tags span {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            color: #333;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            display: inline-block;
         }
 
         .profile-avatar img {
-            width: 140px;
-            height: 140px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #fff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
-        /* Sections */
         section {
-            margin-bottom: 35px;
+            margin-bottom: 40px;
         }
 
         h2 {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             color: var(--primary-color);
             border-left: 4px solid var(--accent-color);
             padding-left: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
-        .item {
-            margin-bottom: 25px;
+        .timeline-item {
+            margin-bottom: 20px;
+            padding-left: 10px;
         }
 
-        .item-title {
-            font-weight: 600;
-            color: #2d3436;
-            font-size: 1.05rem;
-        }
-
-        .item-institution {
-            color: #6c5ce7;
-            font-weight: 500;
-        }
-
-        .item-date {
-            font-size: 0.9rem;
-            color: #95a5a6;
+        .time {
             font-weight: bold;
+            color: #636e72;
             margin-right: 15px;
             display: inline-block;
             min-width: 100px;
         }
 
-        .item-desc {
-            font-size: 0.95rem;
-            color: #636e72;
-            margin-top: 5px;
-            padding-left: 120px;
-        }
-
-        /* Fix for mobile description padding */
-        @media (max-width: 600px) {
-            .item-desc {
-                padding-left: 0;
-            }
-        }
-
-        /* Hobby Grid */
         .hobby-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
-            margin-top: 20px;
         }
 
         .hobby-card {
             background: #fff;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
             text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .hobby-icon {
-            font-size: 1.5rem;
-            margin-bottom: 5px;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
         }
 
         footer {
             text-align: center;
-            margin-top: 50px;
-            border-top: 1px solid #e1e4e8;
             padding-top: 20px;
+            border-top: 1px solid #e1e4e8;
             color: #b2bec3;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
         }
 
         @media (max-width: 600px) {
@@ -172,7 +147,14 @@
             <div class="profile-text">
                 <h1>Zijun Pang (Karina)</h1>
                 <p class="subtitle">Undergraduate Student & Research Intern</p>
-                <p class="details">Freshman | Communication Engineering | UESTC</p>
+                <div class="tags">
+                    <span>✨ Freshman</span>
+                    <span>📱 Communication Engineering</span>
+                    <span>🌟 ESFP-T</span>
+                </div>
+                <p style="margin-top: 20px; color: #2d3436;">
+                    Hello! Welcome to my personal homepage. I am a first-year undergraduate student majoring in Communication Engineering at the University of Electronic Science and Technology of China (UESTC). I possess a strong curiosity about network environments, technology, and programming, and I enjoy leveraging creative approaches to explore the world.
+                </p>
             </div>
             <div class="profile-avatar">
                 <img src="avatar.jpg" alt="Karina's Avatar">
@@ -181,40 +163,38 @@
 
         <section>
             <h2>🎓 Education</h2>
-            <div class="item">
-                <span class="item-date">2025 - Present</span>
-                <span class="item-title">University of Electronic Science and Technology of China (UESTC)</span>
-                <div class="item-desc">B.Eng. in Communication Engineering (Freshman)</div>
+            <div class="timeline-item">
+                <span class="time">2025 - Pres.</span>
+                <strong>University of Electronic Science and Technology of China (UESTC)</strong><br>
+                <span style="color: #636e72; font-size: 0.95rem;">B.Eng. in Communication Engineering (Freshman)</span>
             </div>
         </section>
 
         <section>
             <h2>🔬 Research Experiences</h2>
-            <div class="item">
-                <span class="item-date">2026 - Present</span>
-                <span class="item-title">Research Assistant (Intern)</span> · <span class="item-institution">HKUST</span>
-                <div class="item-desc">
-                    Joined the research team led by <strong>Dr. Lixue Cheng</strong> at The Hong Kong University of Science and Technology (HKUST). Currently acquiring essential research methodologies and foundational knowledge for academic exploration.
-                </div>
+            <div class="timeline-item">
+                <span class="time">2026 - Pres.</span>
+                <strong>Research Assistant (Intern)</strong> · <span style="color: var(--primary-color); font-weight: 500;">HKUST</span><br>
+                <span style="color: #636e72; font-size: 0.95rem;">Joined the research team led by <strong>Dr. Lixue Cheng</strong> at The Hong Kong University of Science and Technology (HKUST). Currently acquiring essential research methodologies and foundational knowledge for academic exploration.</span>
             </div>
         </section>
 
         <section>
             <h2>💻 Skills & Current Focus</h2>
-            <div class="item">
-                <span class="item-date">Research Tools</span>
-                <span class="item-title">Literature Mining & Analysis</span>
-                <div class="item-desc">Actively learning literature mining techniques to efficiently extract, review, and synthesize academic papers and knowledge domains.</div>
+            <div class="timeline-item">
+                <span class="time">Research Tools</span>
+                <strong>Literature Mining & Analysis</strong><br>
+                <span style="color: #636e72; font-size: 0.95rem;">Actively learning literature mining techniques to efficiently extract, review, and synthesize academic papers and knowledge domains.</span>
             </div>
-            <div class="item">
-                <span class="item-date">Programming</span>
-                <span class="item-title">Python Programming Foundations</span>
-                <div class="item-desc">Advancing core skills in Python scripting, foundational data structures, and its practical applications in academic research.</div>
+            <div class="timeline-item">
+                <span class="time">Programming</span>
+                <strong>Python Programming Foundations</strong><br>
+                <span style="color: #636e72; font-size: 0.95rem;">Advancing core skills in Python scripting, foundational data structures, and its practical applications in academic research.</span>
             </div>
-            <div class="item">
-                <span class="item-date">AI Exploration</span>
-                <span class="item-title">Introduction to Large Language Models</span>
-                <div class="item-desc">Gaining primary knowledge in Artificial Intelligence and Large Language Models (LLMs) to understand modern natural language architectures.</div>
+            <div class="timeline-item">
+                <span class="time">AI Exploration</span>
+                <strong>Introduction to Large Language Models</strong><br>
+                <span style="color: #636e72; font-size: 0.95rem;">Gaining primary knowledge in Artificial Intelligence and Large Language Models (LLMs) to understand modern natural language architectures.</span>
             </div>
         </section>
 
@@ -224,21 +204,24 @@
                 <div class="hobby-card">
                     <div class="hobby-icon">💃</div>
                     <strong>Dancing</strong>
+                    <p style="font-size: 0.85rem; color:#636e72; margin-top: 5px;">Expressing energy through vibrant beats...</p>
                 </div>
                 <div class="hobby-card">
                     <div class="hobby-icon">🎤</div>
                     <strong>Singing</strong>
+                    <p style="font-size: 0.85rem; color:#636e72; margin-top: 5px;">Music is my ultimate sanctuary...</p>
                 </div>
                 <div class="hobby-card">
                     <div class="hobby-icon">✈️</div>
                     <strong>Traveling</strong>
+                    <p style="font-size: 0.85rem; color:#636e72; margin-top: 5px;">A passionate nature-lover keen on embracing breathtaking vistas...</p>
                 </div>
             </div>
         </section>
 
         <section>
             <h2>✉️ Contact</h2>
-            <div class="item-desc" style="padding-left: 0;">📧 Email: <a href="mailto:zijunpang522@gmail.com" style="color: var(--primary-color);">zijunpang522@gmail.com</a></div>
+            <p>📧 Email: <a href="mailto:zijunpang522@gmail.com" style="color: var(--primary-color); font-weight: 500;">zijunpang522@gmail.com</a></p>
         </section>
 
         <footer>
